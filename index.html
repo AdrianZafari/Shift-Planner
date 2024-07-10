@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="planner.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="planner.js" defer></script>
+    <title>Shift Planner</title>
+</head>
+<body>
+    <h1>Shift Planner</h1>
+    <div class="introductionText">
+        <h2>Get started:</h2>
+        <ul>
+            <li>Select any date in the week you are planning for </li>
+            <li>Add the names of the people who will be working</li>
+            <li>Press "Add Row" and specify if you are adding a custom message or a task</li>
+            <li>If you have added a task, you can select the people assigned to the task by interacting with the weekday cells</li>
+            <li>Provide a time slot as well for the chosen person</li>
+            <li>Interact with the "Color" button to change the row or text color</li>
+            <li>Once you are finished, you can export the planner as a pdf by pressing the "EXPORT" button</li> 
+        </ul>
+        Press the remove or edit icons to change the input without deleting the entry.<br>
+    </div>
+    <div>
+        <h3>Select Date</h3>
+        <form id="dateForm">
+            <input type="date" id="dateInput" placeholder="Enter date">
+            <button type="button" id="submitBtn">Get Week Dates</button>
+        </form>
+    </div>
+
+    <div>
+        <h3>Manage Names</h3>
+        <form id="nameForm">
+            <input type="text" id="nameInput" placeholder="Enter name">
+            <button type="button" id="addNameBtn">Add Name</button>
+        </form>
+        <div id = "nameList"></div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="tasks">Tasks</th>
+                <th id="monday">Monday</th>
+                <th id="tuesday">Tuesday</th>
+                <th id="wednesday">Wednesday</th>
+                <th id="thursday">Thursday</th>
+                <th id="friday">Friday</th>
+                <th id="saturday">Saturday</th>
+                <th id="sunday" class="lastCell">Sunday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tasks">Test</td>
+                <td>Name</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="lastCell"></td>
+            </tr>
+            <tr>
+                <td class="tasks">Test</td>
+                <td>Name</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="lastCell"></td>
+            </tr>
+            <tr>
+                <td class="tasks">Test</td>
+                <td>Name</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="lastCell"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+
+

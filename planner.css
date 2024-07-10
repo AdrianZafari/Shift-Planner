@@ -1,0 +1,99 @@
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+body {
+    padding: 2%;
+}
+
+.introductionText {
+    margin-bottom: 2%;
+    ul {
+        list-style-type: decimal;
+    }
+}
+
+th, td {
+    padding: 0.5%;
+    width: 10.4%;
+    text-align: center;
+}
+
+th {
+    background-color: #ddd;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+th:last-child {
+    border-right: 0px solid black;
+}
+
+td {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+td:last-child {
+    border-right: 0px solid black;
+}
+
+tr:last-child td {
+    border-bottom: 0px;
+}
+
+.tasks {
+    width: 19%;
+    border-top: 0px;
+    border-left: 0px;
+}
+
+.edit-icon, .remove-icon {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.edit-icon {
+    color: darkgoldenrod;
+}
+
+.edit-icon:hover {
+    color: yellowgreen;
+}
+
+.remove-icon {
+    color: darkred;
+}
+.remove-icon:hover {
+    color: red;
+}
+
+div {
+    list-style-type: none;
+
+    .nameContainer {
+        display: flex;
+        border: 1px solid black;
+        width: 100%;
+        padding: 1.2%;
+        justify-content: space-between;
+    
+    }
+}
+
+#nameList {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1% 0;
+    gap: 2%;
+    
+}
+
+
+
+
+/* .lastCell {
+    border-right: 1px solid blue;
+} */
